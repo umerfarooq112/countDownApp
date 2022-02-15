@@ -114,6 +114,7 @@ p {
   animation: backIntop 1.9s;
   position: relative;
   animation-timing-function: ease-in-out;
+  width: 200px;
 }
 @keyframes backIntop {
   0% {
