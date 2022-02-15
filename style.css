@@ -1,0 +1,307 @@
+body {
+  font-family: "Jost", sans-serif;
+  background-image: url("./assets/bg.jpg");
+  overflow: hidden;
+
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ########## */
+/* Default Styling */
+/* ########## */
+h1,
+h2,
+p {
+  margin: 0px !important;
+}
+
+/* Navbar */
+.nav-bar {
+  padding: 40px 140px;
+  /* position: fixed;
+  width: 1110px; */
+}
+.nav-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar .right-social-icons {
+  display: flex;
+  column-gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+.right-social-icons img {
+  cursor: pointer;
+}
+
+/* ########################## */
+/* Header Menu With Animation */
+/* ########################## */
+.nav-logo {
+  animation: backInLeft 1.9s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+}
+@keyframes backInLeft {
+  0% {
+    left: -400px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    left: 10px;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+.right-social-icons {
+  animation: backInRight 2s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+}
+@keyframes backInRight {
+  0% {
+    left: 400px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    left: -10px;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+/* #################### */
+/* Counter Body Section */
+/* #################### */
+.main-counter-body {
+  position: relative;
+  margin-top: 280px;
+  text-align: center;
+  /* height: 100vh; */
+}
+
+.main-counter-body .center-main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/* body-logoanimation  */
+.body-logo {
+  animation: backIntop 1.9s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+}
+@keyframes backIntop {
+  0% {
+    top: -10px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.counter-english-title,
+.counter-arabic-title {
+  animation: backInrightBottom 2.7s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+  right: 0;
+}
+@keyframes backInrightBottom {
+  0% {
+    right: -400px;
+    top: 50px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    right: 20px;
+    top: 0px;
+  }
+
+  100% {
+    right: 0px;
+
+    opacity: 1;
+  }
+}
+
+.counter-english-text,
+.counter-arabic-text {
+  animation: backInLeftOnly 2.7s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+  right: 0;
+}
+@keyframes backInLeftOnly {
+  0% {
+    left: -500px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    left: 10px;
+  }
+
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+.main-counter-section {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+}
+.main-counter-section > div {
+  width: 135px;
+  height: 154px;
+  background-color: rgb(234, 234, 234, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-transform: capitalize;
+  animation: backInbottomOnly 2.7s cubic-bezier(0.53, 0.84, 0.83, 0.67);
+  position: relative;
+  animation-timing-function: ease-in-out;
+  right: 0;
+}
+/* .main-counter- > div {
+  animation: backInbottomOnly 3s;
+} */
+.main-counter-section > :nth-child(1) {
+  animation: backInbottomOnly 2.1s;
+}
+.main-counter-section > :nth-child(2) {
+  animation: backInbottomOnly 2.4s;
+}
+.main-counter-section > :nth-child(3) {
+  animation: backInbottomOnly 2.7s;
+}
+.main-counter-section > :nth-child(4) {
+  animation: backInbottomOnly 3s;
+}
+
+@keyframes backInbottomOnly {
+  0% {
+    bottom: -500px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 0px;
+  }
+}
+
+/* ########## */
+/* Form CSS */
+/* ########## */
+
+.subscribe-btn {
+  width: 135px;
+  height: 60px;
+  background: #f12d11 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  border: unset;
+  color: white;
+  animation: buttonAnimateRight 2.7s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes buttonAnimateRight {
+  0% {
+    right: -700px;
+    bottom: -500px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    right: 20px;
+    bottom: 0;
+    opacity: 1;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+.email-input {
+  width: 453px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 8px;
+  outline: unset;
+  padding: 20px;
+  border: unset;
+  font-weight: 600 !important ;
+  color: #4a4a4a !important;
+  animation: InputAnimateLeft 2.7s;
+  position: relative;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes InputAnimateLeft {
+  0% {
+    left: -700px;
+    bottom: -500px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    left: 20px;
+    bottom: 0px;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
