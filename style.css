@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 /* ########## */
@@ -94,10 +95,10 @@ p {
 /* Counter Body Section */
 /* #################### */
 .main-counter-body {
-  position: relative;
+  /* position: relative;
   margin-top: 280px;
-  text-align: center;
   /* height: 100vh; */
+  text-align: center;
 }
 
 .main-counter-body .center-main-text {
@@ -189,7 +190,7 @@ p {
 }
 .main-counter-section > div {
   width: 135px;
-  height: 154px;
+  min-height: 154px;
   background-color: rgb(234, 234, 234, 0.2);
   display: flex;
   flex-direction: column;
@@ -272,7 +273,7 @@ p {
 }
 
 .email-input {
-  width: 453px;
+  min-width: 453px;
   height: 60px;
   background: #ffffff;
   border-radius: 8px;
@@ -303,5 +304,59 @@ p {
   100% {
     left: 0;
     opacity: 1;
+  }
+}
+
+/* ############## */
+/* Responsiveness */
+/* ############## */
+
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    padding: 25px 25px;
+  }
+
+  .counter-english-title {
+    font-size: 30px !important;
+  }
+  .counter-arabic-title {
+    font-size: 24px !important;
+  }
+  .counter-english-text,
+  .counter-arabic-text {
+    font-size: 16px !important;
+  }
+
+  .main-counter-section > div {
+    width: 71px !important;
+    min-height: 82px !important;
+    padding: 10px 14px;
+  }
+
+  .c-title {
+    font-size: 41px !important;
+  }
+  .c-txt {
+    font-size: 12px !important;
+  }
+  .main-counter-section {
+    column-gap: 6px;
+    padding: 0px 11px;
+  }
+  .form-section {
+    display: flex;
+    justify-content: center;
+    padding: 0px 26px;
+  }
+  .email-input {
+    min-width: 234px !important;
+    height: 44px;
+    border-radius: 4px;
+  }
+  .subscribe-btn {
+    margin-left: 16px !important;
+    width: 91px;
+    height: 44px;
+    border-radius: 4px;
   }
 }
